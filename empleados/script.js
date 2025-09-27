@@ -2,7 +2,7 @@
 // Configuración base
 // ============================
 
-const API_URL = "http://localhost:4001/api/empleados";
+const API_URL = "https://maxito.hopto.org/api/empleados";
 
 // ============================
 // Validación de formulario
@@ -231,4 +231,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("formulario")
             .addEventListener("submit", agregarEmpleados);
     cargarEmpleados();
+
 });
