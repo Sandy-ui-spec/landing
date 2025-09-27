@@ -1,0 +1,91 @@
+section#amenidades {
+    background: url('./imagenes/guadua3.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
+    overflow-x: hidden; /* Previene el desplazamiento horizontal. */
+}
+
+section p, section ul {
+    font-size: 1.5em; /* Tamaño más grande para mejorar legibilidad. */
+    margin: 10px 0; /* Espaciado superior e inferior. */
+    font-family: papyrus;
+}
+
+/* Contenedor Flexbox */
+.flex-container-ameni {
+    display: flex; /* Activa el modo Flexbox */
+    justify-content: center; /* Espacia uniformemente los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: nowrap; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno del contenedor */
+     /* background-color: #ffffff; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    flex-direction: row; */
+     color: #00376b;
+}
+
+
+.container-ameni {
+    display:flex; /* Activa el modo Flexbox */
+    justify-content: center; /* Espacia uniformemente los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    /*flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 10px; /* Espaciado entre los elementos */
+    padding: 10px; /* Espaciado interno del contenedor */
+    /*background-color: lightblue; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    flex-direction: column;*/
+    margin-left: auto;
+    width: 800px; /*Ancho*/
+    height: 1000px; /* Alto*/
+}
+
+
+/* Elementos Flexbox */
+
+.imagen-central img {
+    padding: 10px;
+  width: 200px; /* Ajusta según tu diseño */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 80%;
+  max-width: 600px;
+  width: 350px; /* Fija el ancho de las imágenes*/
+  height: 350px; /* Ajusta automáticamente la altura para mantener la proporción. */
+}
+
+.zoom-img {
+  width: 100%;
+  max-width: 300px; /* ajusta según tu diseño */
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.zoom-img:hover {
+  transform: scale(1.1);
+}
+
+
+/* Para móviles y pantallas pequeñas */
+
+@media (max-width: 768px) {
+  .flex-container-ameni {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .zoom-img {
+    max-width: 100%;
+  }
+
+  .imagen-central img {
+    max-width: 80%;
+  }
+
+  .container-ameni {
+    width: 100%;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,78 @@
+section#inicio {
+    background: url('./imagenes/bienvenidos1.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
+    overflow-x: hidden; /* Previene el desplazamiento horizontal. */
+}
+
+section h4 {
+    font-size: 2.5em; /* Tamaño grande para destacar títulos. */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px; /* Espaciado inferior para separación del texto. */
+    color: #000000; /* Azul claro para los títulos. */
+    padding: 150px;
+    font-style: oblique;
+    text-align: left;
+}
+
+
+/* Contenedor Flexbox */
+.container {
+    display:flex; /* Activa el modo Flexbox */
+    justify-content: left; /* Espacia uniformemente los elementos */
+    align-items: left; /* Centra los elementos verticalmente */
+     /*flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 30px; /* Espaciado entre los elementos */
+    padding: 100px; /* Espaciado interno del contenedor */
+    /*background-color: lightblue; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    flex-direction: column;
+}
+
+
+/* Elementos Flexbox */
+.item_inicio {
+    /*background-color: lightgray; /* Fondo azul intermedio */
+    /*opacity: 0.5;*/
+    color: #000; /* Color Texto  */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    max-width: 800px; /* Tamaño mínimo de los elementos */
+    max-height: 800px;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */ 
+    font-size: 1.4em; /* Tamaño más grande para mejorar legibilidad. */
+    font-family: papyrus;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+  section h4 {
+    font-size: 1.8em;
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .container {
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  .item_inicio {
+    font-size: 1.2em;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  section h4 {
+    font-size: 1.5em;
+    padding: 40px 10px;
+  }
+
+  .item_inicio {
+    font-size: 1em;
+    padding: 8px;
+  }
+}
+

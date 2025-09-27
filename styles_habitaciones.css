@@ -1,0 +1,145 @@
+/* Sección Habitaciones */
+section#habitaciones {
+  background: url('./imagenes/fondohabitaciones.jpg') no-repeat center center fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  padding: 40px 20px;
+}
+
+/* Tipografía */
+.container- p {
+  font-size: 0.8em;
+}
+
+.container-1 p {
+  font-size: 1em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: oblique;
+  text-align: center;
+}
+
+/* Contenedores Flexbox */
+.flex-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que se acomoden en varias líneas */
+  gap: 40px;
+  color: #00376b;
+}
+
+
+.container- {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Elementos */
+.itemhabi {
+  color: rgb(68, 61, 61);
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  flex: 1;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.item1 {
+  color: rgb(68, 61, 61);
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  width: 100%;
+  max-width: 400px;
+  min-height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.item4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  max-width: 200px;
+  min-height: 50px;
+  /*background-color: white;*/
+  /*border-radius: 10px;*/
+  /*border: double 2px black;*/
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imágenes */
+.item img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 7px solid #D9A273;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.img-habitacion {
+  transition: transform 0.5s ease;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.img-habitacion:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .flex-container-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .item1 {
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .container-1 p {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .itemhabi {
+    max-width: 100%;
+  }
+
+  .item img {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-1 p {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  .item1 {
+    padding: 10px;
+  }
+
+  .item img {
+    border-width: 5px;
+  }
+}
+

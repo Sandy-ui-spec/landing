@@ -1,0 +1,90 @@
+section#reservas {
+    background: url('./imagenes/bienvenidos1.png') no-repeat center center fixed; /* Imagen de fondo centrada y fija. */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el espacio. */
+    overflow-x: hidden; /* Previene el desplazamiento horizontal. */
+}
+
+/* Contenedor del formulario */
+.form-container {
+    width: 100%; /* Ocupa el 100% del ancho disponible. */
+    max-width: 400px; /* Limita el ancho máximo del formulario. */
+    background-color: #ffffff; /* Fondo blanco para contraste. */
+    padding: 20px; /* Espaciado interno del formulario. */
+    border-radius: 8px; /* Bordes redondeados para un diseño más agradable. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad. */
+}
+
+/* Título del formulario */
+.form-container h3 {
+    text-align: center; /* Centra el texto del título. */
+    color: #808000; /* Azul oscuro para resaltar. */
+    margin-bottom: 20px; /* Espaciado inferior para separar del formulario. */
+}
+
+/* Campos del formulario */
+.form-container input, .form-container textarea {
+    width: 100%; /* Ocupa todo el ancho del contenedor. */
+    padding: 10px; /* Espaciado interno para comodidad al escribir. */
+    margin-bottom: 15px; /* Espaciado inferior entre los campos. */
+    border: 1px solid #ccc; /* Borde gris claro. */
+    border-radius: 5px; /* Bordes redondeados. */
+    font-size: 16px; /* Tamaño de texto estándar. */
+}
+
+/* Botón de envío del formulario */
+.form-container button {
+    width: 100%; /* Ocupa todo el ancho disponible. */
+    padding: 10px; /* Espaciado interno. */
+    background-color:#808000; /* Fondo azul oscuro. */
+    color: #ffffff; /* Texto blanco. */
+    font-size: 16px; /* Tamaño del texto del botón. */
+    border: none; /* Sin borde adicional. */
+    border-radius: 5px; /* Bordes redondeados. */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón. */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar el color. */
+    
+}
+
+/* ========================
+   Diseño responsive
+   ======================== */
+
+/* Para tablets y pantallas medianas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título en tablets y pantallas medianas. */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Apila los enlaces del menú verticalmente en lugar de en una fila. */
+        gap: 10px; /* Disminuye el espacio entre enlaces para ajustarse mejor al tamaño de pantalla. */
+    }
+
+    section h2 {
+        font-size: 2em; /* Reduce ligeramente el tamaño de los títulos en secciones para mejor legibilidad. */
+    }
+}
+
+/* Para móviles y pantallas pequeñas */
+@media (max-width: 480px) {
+    header {
+        padding: 10px; /* Reduce el espacio interno del encabezado para optimizar el espacio disponible. */
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reduce el tamaño del título aún más para pantallas más pequeñas. */
+    }
+
+    section {
+        padding: 40px 10px; /* Ajusta el relleno de las secciones para aprovechar mejor el espacio. */
+    }
+
+    .form-container {
+        padding: 15px; /* Disminuye el espacio interno del formulario para que sea más compacto en móviles. */
+        max-width: 100%; /* Asegura que el formulario ocupe todo el ancho de la pantalla en móviles. */
+    }
+
+    footer {
+        font-size: 0.8em; /* Reduce el tamaño del texto en el pie de página para pantallas pequeñas. */
+    }
+}
